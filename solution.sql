@@ -1,1 +1,12 @@
-
+SET SERVEROUTPUT ON;
+DECLARE
+ A NUMBER := 10;
+ B NUMBER := 20;
+ S NUMBER;
+BEGIN
+ S := A + B;
+ DBMS_OUTPUT.PUT_LINE('First Number: ' || A);
+ DBMS_OUTPUT.PUT_LINE('Second Number: ' || B);
+ DBMS_OUTPUT.PUT_LINE('Sum = ' || S);
+END;
+/
